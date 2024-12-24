@@ -1,62 +1,57 @@
 package org.example.questions.parkingLot;
 
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import org.example.questions.parkingLot.display.Display;
 import org.example.questions.parkingLot.floors.Floor;
-import org.example.questions.parkingLot.parkingSlots.ParkingSlot;
-import org.example.questions.parkingLot.parkingSlots.ParkingSlotType;
+import org.example.questions.parkingLot.parkingSpots.ParkingSpot;
+import org.example.questions.parkingLot.parkingSpots.ParkingSpotType;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 
 
 @Getter
+@RequiredArgsConstructor
 public class SchoolParkingLot implements ParkingLot {
     private final String parkingLotName;
-    private final HashSet<Floor> floors;
     private final Display display;
-
-    private int totalParkingSlots;
-    private int carParkingSlots;
-    private int bikeParkingSlots;
-    private int handicapParkingSlots;
-
-    public SchoolParkingLot(String parkingLotName, Display display) {
-        this.parkingLotName = parkingLotName;
-        this.display = display;
-        this.floors = new HashSet<>();
-    }
+    private final HashMap<Integer, Floor> floors;
 
     @Override
     public void addFloors(List<Floor> floors) {
-        for (Floor floor : floors) {
-            carParkingSlots += floor.getCarParkingSlots();
-            bikeParkingSlots += floor.getBikeParkingSlots();
-            handicapParkingSlots += floor.getHandicapParkingSlots();
-
-            this.floors.add(floor);
-        }
-
-        totalParkingSlots = carParkingSlots + bikeParkingSlots + handicapParkingSlots;
+        floors.forEach(floor -> this.floors.put(floor.getFloor(), floor));
         updateDisplay();
     }
 
     @Override
-    public ParkingSlot findParkingSpot(ParkingSlotType slotType) {
-        return floors.stream()
-                .map(floor -> floor.getParkingSpot(slotType))
-                .findFirst().orElse(null);
+    public void addSpots(int floor, List<ParkingSpot> spots) {
+        this.floors.get(floor).addParkingSlots(spots);
+        updateDisplay();
+    }
+
+    @Override
+    public ParkingSpot findParkingSpot(ParkingSpotType spotType) {
+        ParkingSpot availableSpot = null;
+
+        this.floors.forEach((floorNumber, floor) -> {
+            availableSpot = floor.getParkingSpot(spotType);
+
+            if (availableSpot != null) {
+                switch (spotType) {
+                    case CAR_PARKING -> floor.setCarParkingSlots(floor.getCarParkingSlots()-1);
+                    case BIKE_PARKING -> floor.setBikeParkingSlots(floor.getBikeParkingSlots()-1);
+                    case HANDICAP_PARKING -> floor.setHandicapParkingSlots(floor.getHandicapParkingSlots()-1);
+                }
+
+            }
+        });
+
+        return null;
     }
 
     @Override
     public void updateDisplay() {
-        HashMap<String, Integer> displayMap = new HashMap<>();
-
-        displayMap.put("carParkingSlots", carParkingSlots);
-        displayMap.put("bikeParkingSlots", bikeParkingSlots);
-        displayMap.put("handicapParkingSlots", handicapParkingSlots);
-
-        display.displayOnScreen(displayMap);
+        display.displayOnScreen(new HashMap<>());
     }
 }

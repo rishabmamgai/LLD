@@ -1,68 +1,57 @@
 package org.example.questions.parkingLot.floors;
 
 import lombok.Getter;
-import org.example.questions.parkingLot.parkingSlots.ParkingSlot;
-import org.example.questions.parkingLot.parkingSlots.ParkingSlotType;
+import lombok.Setter;
+import org.example.questions.parkingLot.parkingSpots.ParkingSpot;
+import org.example.questions.parkingLot.parkingSpots.ParkingSpotType;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.List;
 
 
 @Getter
+@Setter
 public class Floor {
-    private final String floor;
-    private final Deque<ParkingSlot> parkingSlots;
-    private final HashSet<ParkingSlot> reservedSlots;
+    private final int floor;
+    private final Deque<ParkingSpot> availableSpots;
+    private final Deque<ParkingSpot> unavailableSlots;
 
-    private int totalParkingSlots;
     private int carParkingSlots;
     private int bikeParkingSlots;
     private int handicapParkingSlots;
 
-    public Floor(String floor) {
+    public Floor(int floor) {
         this.floor = floor;
-        this.parkingSlots = new ArrayDeque<>();
-        this.reservedSlots = new HashSet<>();
+        this.availableSpots = new ArrayDeque<>();
+        this.unavailableSlots = new ArrayDeque<>();
     }
 
-    public void addParkingSlots(List<ParkingSlot> slots) {
-        for (ParkingSlot slot : slots) {
-            parkingSlots.add(slot);
+    public void addParkingSlots(List<ParkingSpot> spots) {
+        spots.forEach(spot -> {
+            availableSpots.add(spot);
 
-            if (slot.getParkingSlotType() == ParkingSlotType.CAR_PARKING) {
-                carParkingSlots++;
+            switch (spot.getParkingSpotType()) {
+                case CAR_PARKING -> carParkingSlots++;
+                case BIKE_PARKING -> bikeParkingSlots++;
+                case HANDICAP_PARKING -> handicapParkingSlots++;
             }
-            else if (slot.getParkingSlotType() == ParkingSlotType.BIKE_PARKING) {
-                bikeParkingSlots++;
-            }
-            else if (slot.getParkingSlotType() == ParkingSlotType.HANDICAP_PARKING) {
-                handicapParkingSlots++;
-            }
-        }
-
-        totalParkingSlots = parkingSlots.size();
-        update();
+        });
     }
 
-    public ParkingSlot getParkingSpot(ParkingSlotType slotType) {
-        if (parkingSlots.isEmpty()) {
+    public ParkingSpot getParkingSpot(ParkingSpotType spotType) {
+        if (availableSpots.isEmpty()) {
             return null;
         }
 
-        ParkingSlot emptySlot = parkingSlots.stream()
-                .filter(ParkingSlot::isAvailable)
-                .map(slot -> {
-                    if (slot.getParkingSlotType() == slotType) {
-                        return slot;
-                    }
-                    return null;
-                }).findFirst().orElse(null);
+        ParkingSpot emptySlot = availableSpots.stream()
+                .filter(spot -> spot.getParkingSpotType() == spotType)
+                .filter(ParkingSpot::isAvailable)
+                .findFirst()
+                .orElse(null);
 
-        parkingSlots.remove(emptySlot);
-        reservedSlots.add(emptySlot);
+        availableSpots.remove(emptySlot);
+        unavailableSlots.add(emptySlot);
         return emptySlot;
-    }
-
-    public void update() {
-
     }
 }
