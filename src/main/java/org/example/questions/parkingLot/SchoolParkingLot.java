@@ -32,10 +32,8 @@ public class SchoolParkingLot implements ParkingLot {
 
     @Override
     public ParkingSpot findParkingSpot(ParkingSpotType spotType) {
-        ParkingSpot availableSpot = null;
-
-        this.floors.forEach((floorNumber, floor) -> {
-            availableSpot = floor.getParkingSpot(spotType);
+        for (Floor floor : this.floors.values()) {
+            ParkingSpot availableSpot = floor.getParkingSpot(spotType);
 
             if (availableSpot != null) {
                 switch (spotType) {
@@ -44,14 +42,24 @@ public class SchoolParkingLot implements ParkingLot {
                     case HANDICAP_PARKING -> floor.setHandicapParkingSlots(floor.getHandicapParkingSlots()-1);
                 }
 
+                return availableSpot;
             }
-        });
+        }
 
+        updateDisplay();
         return null;
     }
 
     @Override
     public void updateDisplay() {
-        display.displayOnScreen(new HashMap<>());
+        HashMap<ParkingSpotType, Integer> displayMap = new HashMap<>();
+
+        for (Floor floor : this.floors.values()) {
+            displayMap.put(ParkingSpotType.CAR_PARKING, displayMap.getOrDefault(ParkingSpotType.CAR_PARKING, 0) + floor.getCarParkingSlots());
+            displayMap.put(ParkingSpotType.BIKE_PARKING, displayMap.getOrDefault(ParkingSpotType.BIKE_PARKING, 0) + floor.getBikeParkingSlots());
+            displayMap.put(ParkingSpotType.HANDICAP_PARKING, displayMap.getOrDefault(ParkingSpotType.HANDICAP_PARKING, 0) + floor.getHandicapParkingSlots());
+        }
+
+        display.displayOnScreen(displayMap);
     }
 }

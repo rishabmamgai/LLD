@@ -8,12 +8,12 @@ import java.util.HashMap;
 
 public class ParkingDisplay implements Display {
     @Override
-    public void displayOnScreen(HashMap<String, Integer> details) {
+    public void displayOnScreen(HashMap<ParkingSpotType, Integer> details) {
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println(" ------------------- Parking Display -------------------- ");
-        System.out.println("+ Car Parking : " + details.get("carParkingSlots"));
-        System.out.println("+ Bike Parking : " + details.get("bikeParkingSlots"));
-        System.out.println("+ Handicap Parking : " + details.get("handicapParkingSlots"));
+        System.out.println("+ Car Parking : " + details.get(ParkingSpotType.CAR_PARKING));
+        System.out.println("+ Bike Parking : " + details.get(ParkingSpotType.BIKE_PARKING));
+        System.out.println("+ Handicap Parking : " + details.get(ParkingSpotType.HANDICAP_PARKING));
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
     }
 

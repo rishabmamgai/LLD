@@ -7,6 +7,6 @@ import java.util.HashMap;
 
 
 public interface Display {
-    void displayOnScreen(HashMap<String, Integer> details);
+    void displayOnScreen(HashMap<ParkingSpotType, Integer> details);
     ParkingSpot reserveParkingSpot(ParkingSpotType slotType);
 }

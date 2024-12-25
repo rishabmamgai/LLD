@@ -50,8 +50,12 @@ public class Floor {
                 .findFirst()
                 .orElse(null);
 
-        availableSpots.remove(emptySlot);
-        unavailableSlots.add(emptySlot);
+        if (emptySlot != null) {
+            emptySlot.setAvailable(false);
+            availableSpots.remove(emptySlot);
+            unavailableSlots.add(emptySlot);
+        }
+
         return emptySlot;
     }
 }
