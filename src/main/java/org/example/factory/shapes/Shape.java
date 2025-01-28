@@ -1,5 +1,6 @@
 package org.example.factory.shapes;
 
+
 public interface Shape {
     String getName();
 
