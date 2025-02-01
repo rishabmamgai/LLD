@@ -13,4 +13,22 @@
 
 ## Abstract Factory
 
-***DEFINE***
+***Helps in creating families of related objects without specifying the concrete classes.***
+
+-- Add UML diagrams --
+
+
+----
+
+
+## Builder
+
+***Helps to construct complex objects step by step.***
+
+1. Selectively set fields of an object while instantiation.
+2. Reduces need for multiple constructors based on number of fields.
+
+-- Add UML diagrams --
+
+
+----
