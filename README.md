@@ -1,7 +1,5 @@
 # Creational Design Patterns
 
-----
-
 
 ## Factory
 
@@ -13,17 +11,11 @@
 -- Add UML diagrams --
 
 
-----
-
-
 ## Abstract Factory
 
 ***Helps in creating families of related objects without specifying the concrete classes.***
 
 -- Add UML diagrams --
-
-
-----
 
 
 ## Builder
@@ -33,10 +25,10 @@
 1. Selectively set fields of an object while instantiation.
 2. Reduces need for multiple constructors based on number of fields.
 
--- Add UML diagrams --
+![Builder UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Builder.jpg?raw=true)
 
 
-----
+# Behavioural Design Patterns
 
 
 ## Strategy
@@ -47,8 +39,4 @@
 2. Enables client to switch between required strategies at runtime.
 
 -- Add UML diagrams --
-
-
-----
-
 
