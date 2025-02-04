@@ -1,3 +1,8 @@
+# Creational Design Patterns
+
+----
+
+
 ## Factory
 
 ***Defines an interface for creating an object, but let subclasses decide which class to instantiate.***
@@ -32,3 +37,18 @@
 
 
 ----
+
+
+## Strategy
+
+***Defines family or classes (Strategies) of algorithms and encapsulates their behaviour.***
+
+1. Provides modularity and reusability of specific behaviours to be used by client.
+2. Enables client to switch between required strategies at runtime.
+
+-- Add UML diagrams --
+
+
+----
+
+
