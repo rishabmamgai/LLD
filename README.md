@@ -38,5 +38,9 @@
 1. Provides modularity and reusability of specific behaviours to be used by client.
 2. Enables client to switch between required strategies at runtime.
 
--- Add UML diagrams --
+![Strategy UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Strategy.jpg?raw=true)
 
+
+## Observer
+
+***Defines a one-to-many dependency between objects and notifies the dependents (Observers) about any state change.***
