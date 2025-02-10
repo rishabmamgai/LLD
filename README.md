@@ -21,6 +21,7 @@
 
 1. Selectively set fields of an object while instantiation.
 2. Reduces need for multiple constructors based on number of fields.
+
 ![Builder UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Builder.jpg?raw=true)
 
 
@@ -32,11 +33,14 @@
 
 1. Provides modularity and reusability of specific behaviours to be used by client.
 2. Enables client to switch between required strategies at runtime.
+
 ![Strategy UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Strategy.jpg?raw=true)
 
 
 ## Observer
 ***Defines a one-to-many dependency between objects and notifies the dependents (Observers) about any state change.***
+
+![Observer UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Observer.jpg?raw=true)
 
 
 ## Chain Of Responsibility
@@ -44,3 +48,9 @@
 
 1. Provides loose coupling, as handler in chain decide themselves who will process the request.
 2. Client doesn't need to know exact request types and their sequences.
+
+
+# Structural Design Patterns
+
+## Adapter
+******
