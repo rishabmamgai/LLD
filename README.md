@@ -53,4 +53,6 @@
 # Structural Design Patterns
 
 ## Adapter
-******
+***Provides an additional interface for allowing incompatible interfaces to work together.***
+
+![Adapter UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Adapter.jpg?raw=true)
