@@ -49,6 +49,8 @@
 1. Provides loose coupling, as handler in chain decide themselves who will process the request.
 2. Client doesn't need to know exact request types and their sequences.
 
+![Chain Of Responsibility UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Chain%20Of%20Responsibility.jpg?raw=true)
+
 
 # Structural Design Patterns
 

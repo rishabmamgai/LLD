@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 
 
 @RequiredArgsConstructor
-public abstract class LogHandler {
+public class LogHandler {
     private final LogHandler nextLogHandler;
 
     public void log(LogLevel logLevel, String message) {
