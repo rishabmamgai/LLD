@@ -7,13 +7,13 @@
 1. The main idea is to defer the logic of instantiation to subclasses.
 2. This helps in hiding the logic behind creation of object from the client.
 
--- Add UML diagrams --
+![Factory UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Factory.jpg?raw=true)
 
 
 ## Abstract Factory
 ***Helps in creating families of related objects without specifying the concrete classes.***
 
--- Add UML diagrams --
+![Abstract Factory UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Abstract%20Factory.jpg?raw=true)
 
 
 ## Builder
