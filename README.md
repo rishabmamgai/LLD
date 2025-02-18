@@ -58,3 +58,12 @@
 ***Provides an additional interface for allowing incompatible interfaces to work together.***
 
 ![Adapter UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Adapter.jpg?raw=true)
+
+
+## Composite
+***Lets client compose objects into tree-like structures to represent part-whole hierarchies.***
+
+1. Client can treat individual objects and compositions uniformly.
+2. Use when multiple objects are being used in a same way, then client doesn't have to worry about concrete class.
+
+![Composite UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Composite.jpg?raw=true)
