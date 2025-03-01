@@ -60,6 +60,12 @@
 ![Adapter UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Adapter.jpg?raw=true)
 
 
+## Decorator
+***Allows to add functionality to an object dynamically without changing behaviour of other objects.***
+
+![Decorator UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Decorator.jpg?raw=true)
+
+
 ## Composite
 ***Lets client compose objects into tree-like structures to represent part-whole hierarchies.***
 
