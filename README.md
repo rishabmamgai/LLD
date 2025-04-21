@@ -54,6 +54,7 @@
 
 # Structural Design Patterns
 
+
 ## Adapter
 ***Provides an additional interface for allowing incompatible interfaces to work together.***
 
@@ -73,3 +74,12 @@
 2. Use when multiple objects are being used in a same way, then client doesn't have to worry about concrete class.
 
 ![Composite UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Composite.jpg?raw=true)
+
+
+## Proxy
+***Provides controlled access to a functionality.***
+
+![Proxy UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Proxy.jpg?raw=true)
+
+
+## Facade
