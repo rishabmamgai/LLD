@@ -1,9 +1,9 @@
 package org.example.facade;
 
-
 import org.example.facade.subsytemServices.InvoiceService;
 import org.example.facade.subsytemServices.NotificationService;
 import org.example.facade.subsytemServices.PaymentService;
+
 
 public class OrderFacade {
     private final PaymentService paymentService;
@@ -16,15 +16,15 @@ public class OrderFacade {
         this.notificationService = new NotificationService();
     }
 
-    public void placeOrder(Cart cart, AccountDetails accountDetails) {
+    public void placeOrder(Cart cart, Account account) {
         double totalAmount = 0;
         for (Product product : cart.products()) {
             totalAmount += product.getAmount();
         }
 
-        if (paymentService.initiatePayment(accountDetails, totalAmount)) {
-            invoiceService.generateInvoice(cart);
-            notificationService.sendNotification(cart.email());
+        if (paymentService.pay(account, totalAmount)) {
+            invoiceService.generate(cart);
+            notificationService.send(cart.email());
         }
     }
 }

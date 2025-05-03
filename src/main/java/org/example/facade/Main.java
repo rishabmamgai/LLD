@@ -12,9 +12,9 @@ public class Main {
             )
         );
 
-        AccountDetails accountDetails = new AccountDetails("0123456789");
+        Account account = new Account("0123456789");
 
         OrderFacade orderFacade = new OrderFacade();
-        orderFacade.placeOrder(cart, accountDetails);
+        orderFacade.placeOrder(cart, account);
     }
 }

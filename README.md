@@ -83,3 +83,6 @@
 
 
 ## Facade
+*** Provides a simplified interface to a complex set of classes, library and framework. ***
+
+![Facade UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Facade.jpg?raw=true)
