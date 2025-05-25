@@ -83,6 +83,15 @@
 
 
 ## Facade
-*** Provides a simplified interface to a complex set of classes, library and framework. ***
+***Provides a simplified interface to a complex set of classes, library and framework.***
 
 ![Facade UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Facade.jpg?raw=true)
+
+
+## Bridge
+***Decouples an abstraction from its implementation so that both can vary independently.***
+
+1. Prevents hierarchy from growing exponentially when new types are added. [Refer for problem](https://refactoring.guru/design-patterns/bridge#:~:text=of%20each%C2%A0other.-,Problem,-Abstraction%3F%20Implementation)
+2. Switches inheritance to composition.
+
+![Bridge UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Bridge.jpg?raw=true)

@@ -1,6 +1,6 @@
-package org.example.strategy.cars;
+package org.example.bridge.cars;
 
-import org.example.strategy.driveStrategy.Drivable;
+import org.example.bridge.driveStrategy.Drivable;
 
 
 public abstract class Car {

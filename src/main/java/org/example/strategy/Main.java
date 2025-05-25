@@ -1,16 +1,15 @@
 package org.example.strategy;
 
-import org.example.strategy.cars.Car;
-import org.example.strategy.cars.Suv;
-import org.example.strategy.driveStrategy.AwdDrivable;
-import org.example.strategy.driveStrategy.Drivable;
+import org.example.strategy.encoderstrategies.Mp4;
+import org.example.strategy.encoderstrategies.Mp3;
 
 
 public class Main {
     public static void main(String[] args) {
-        Drivable awdDrive = new AwdDrivable();
-        Car suvCar = new Suv(awdDrive);
-        System.out.println(suvCar.getCarType());
-        System.out.println(suvCar.driveType());
+        VideoEncoder videoEncoder1 = new VideoEncoder(new Mp3());
+        videoEncoder1.encodeVideo();;
+
+        VideoEncoder videoEncoder2 = new VideoEncoder(new Mp4());
+        videoEncoder2.encodeVideo();
     }
 }
