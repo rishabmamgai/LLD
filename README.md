@@ -52,6 +52,15 @@
 ![Chain Of Responsibility UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Chain%20Of%20Responsibility.jpg?raw=true)
 
 
+## Command
+***Turns request into a standalone object that contains all information about the request.***
+
+1. Implement loose coupling in a request-response model.
+2. Use to queue operations and implement reversible operations.
+
+![Command UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Command.jpg?raw=true)
+
+
 # Structural Design Patterns
 
 
