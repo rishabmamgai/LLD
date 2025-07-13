@@ -61,6 +61,12 @@
 ![Command UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Command.jpg?raw=true)
 
 
+## Iterator
+***Traverse elements of a collection without exposing the underlying representation.***
+
+![Iterator UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Iterator.jpg?raw=true)
+
+
 # Structural Design Patterns
 
 
