@@ -74,6 +74,14 @@
 ![Mediator UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Mediator.jpg?raw=true)
 
 
+## Visitor
+***Separates operations from the objects on which it operates.***
+1. Allows adding new operations to existing classes without changing their structure.
+2. Improves modularity and maintainability.
+
+![Visitor UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Visitor.jpg?raw=true)
+
+
 # Structural Design Patterns
 
 
