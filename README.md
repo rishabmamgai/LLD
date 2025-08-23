@@ -82,6 +82,15 @@
 ![Visitor UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Visitor.jpg?raw=true)
 
 
+## Memento
+***Allows objects state to be saved and restored without exposing its internal details.***
+* Originator - **Document**
+* Caretaker - **PageHistory**
+* Memento - **DocumentSnapshot**
+
+![Memento UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Memento.jpg?raw=true)
+
+
 # Structural Design Patterns
 
 
