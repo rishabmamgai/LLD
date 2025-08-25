@@ -91,6 +91,13 @@
 ![Memento UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Memento.jpg?raw=true)
 
 
+## Template
+***Defines steps to execute an algorithm.***
+1. Subclasses can override the steps and provide implementation. 
+
+![Template UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Template.jpg?raw=true)
+
+
 # Structural Design Patterns
 
 
