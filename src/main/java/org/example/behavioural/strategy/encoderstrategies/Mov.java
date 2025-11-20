@@ -1,7 +1,7 @@
-package org.example.strategy.encoderstrategies;
+package org.example.behavioural.strategy.encoderstrategies;
 
 
-public class Mp3 implements EncoderStrategy {
+public class Mov implements EncoderStrategy {
     @Override
     public void encode() {
         System.out.println("Encoding to " + getClass().getSimpleName());

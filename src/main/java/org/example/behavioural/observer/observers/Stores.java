@@ -1,4 +1,4 @@
-package org.example.observer.observers;
+package org.example.behavioural.observer.observers;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,6 +11,6 @@ public class Stores implements Observer {
 
     @Override
     public void updateObservers() {
-        System.out.println("Product is available for stores now.");
+        System.out.println(storeName + " : Product is available for stores now.");
     }
 }

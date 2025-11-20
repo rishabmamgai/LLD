@@ -1,4 +1,4 @@
-package org.example.strategy.encoderstrategies;
+package org.example.behavioural.strategy.encoderstrategies;
 
 
 public class Mp4 implements EncoderStrategy {

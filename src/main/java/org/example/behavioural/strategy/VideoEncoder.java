@@ -1,7 +1,7 @@
-package org.example.strategy;
+package org.example.behavioural.strategy;
 
 import lombok.RequiredArgsConstructor;
-import org.example.strategy.encoderstrategies.EncoderStrategy;
+import org.example.behavioural.strategy.encoderstrategies.EncoderStrategy;
 
 
 @RequiredArgsConstructor

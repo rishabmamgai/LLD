@@ -1,9 +1,9 @@
-package org.example.observer;
+package org.example.behavioural.observer;
 
-import org.example.observer.observables.InStockReminder;
-import org.example.observer.observers.Customers;
-import org.example.observer.observers.Observer;
-import org.example.observer.observers.Stores;
+import org.example.behavioural.observer.observables.InStockReminder;
+import org.example.behavioural.observer.observers.Customers;
+import org.example.behavioural.observer.observers.Observer;
+import org.example.behavioural.observer.observers.Stores;
 
 import java.util.ArrayList;
 import java.util.List;

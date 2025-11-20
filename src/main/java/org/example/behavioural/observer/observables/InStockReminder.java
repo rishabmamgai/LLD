@@ -1,8 +1,8 @@
-package org.example.observer.observables;
+package org.example.behavioural.observer.observables;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.example.observer.observers.Observer;
+import org.example.behavioural.observer.observers.Observer;
 import java.util.List;
 
 

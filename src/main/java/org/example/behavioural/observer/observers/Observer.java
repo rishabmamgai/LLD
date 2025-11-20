@@ -1,4 +1,4 @@
-package org.example.observer.observers;
+package org.example.behavioural.observer.observers;
 
 
 public interface Observer {
