@@ -1,7 +1,7 @@
-package org.example.command;
+package org.example.behavioural.command;
 
 import lombok.Setter;
-import org.example.command.commands.Command;
+import org.example.behavioural.command.commands.Command;
 
 
 @Setter

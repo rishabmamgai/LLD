@@ -1,4 +1,4 @@
-package org.example.command.commands;
+package org.example.behavioural.command.commands;
 
 
 public interface Command {

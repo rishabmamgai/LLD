@@ -1,4 +1,4 @@
-package org.example.chainOfReponsibility.handlers;
+package org.example.behavioural.chainofreponsibility.handlers;
 
 
 public class LogWarnHandler extends LogHandler {

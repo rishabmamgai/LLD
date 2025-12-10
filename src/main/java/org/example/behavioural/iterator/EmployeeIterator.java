@@ -1,4 +1,4 @@
-package org.example.iterator;
+package org.example.behavioural.iterator;
 
 import java.util.Iterator;
 import java.util.List;

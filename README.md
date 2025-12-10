@@ -28,21 +28,6 @@
 # Behavioural Design Patterns
 
 
-## Observer
-***Defines a one-to-many dependency between objects and notifies the dependents (Observers) about any state change.***
-
-![Observer UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Observer.jpg?raw=true)
-
-
-## Strategy
-***Defines family or classes (Strategies) of algorithms and encapsulates their behaviour.***
-
-1. Provides modularity and reusability of specific behaviours to be used by client.
-2. Enables client to switch between required strategies at runtime.
-
-![Strategy UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Strategy.jpg?raw=true)
-
-
 ## Chain Of Responsibility
 ***Allows to pass a request along a chain of handlers. Each handler decides either to process request or to pass it along.***
 
@@ -61,10 +46,35 @@
 ![Command UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Command.jpg?raw=true)
 
 
+## Interpreter
+
+
 ## Iterator
 ***Traverse elements of a collection without exposing the underlying representation.***
 
 ![Iterator UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Iterator.jpg?raw=true)
+
+
+## Observer
+***Defines a one-to-many dependency between objects and notifies the dependents (Observers) about any state change.***
+
+![Observer UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Observer.jpg?raw=true)
+
+
+## Strategy
+***Defines family or classes (Strategies) of algorithms and encapsulates their behaviour.***
+
+1. Provides modularity and reusability of specific behaviours to be used by client.
+2. Enables client to switch between required strategies at runtime.
+
+![Strategy UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Strategy.jpg?raw=true)
+
+
+## Template
+***Defines steps to execute an algorithm.***
+1. Subclasses can override the steps and provide implementation.
+
+![Template UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Template.jpg?raw=true)
 
 
 ## Mediator
@@ -89,13 +99,6 @@
 * Memento - **DocumentSnapshot**
 
 ![Memento UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Memento.jpg?raw=true)
-
-
-## Template
-***Defines steps to execute an algorithm.***
-1. Subclasses can override the steps and provide implementation. 
-
-![Template UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Template.jpg?raw=true)
 
 
 # Structural Design Patterns

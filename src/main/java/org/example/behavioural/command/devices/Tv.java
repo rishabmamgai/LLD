@@ -1,4 +1,4 @@
-package org.example.command.devices;
+package org.example.behavioural.command.devices;
 
 
 public class Tv implements Device {

@@ -1,10 +1,10 @@
-package org.example.command;
+package org.example.behavioural.command;
 
-import org.example.command.commands.Command;
-import org.example.command.commands.TurnOffCommand;
-import org.example.command.commands.TurnOnCommand;
-import org.example.command.devices.Ac;
-import org.example.command.devices.Tv;
+import org.example.behavioural.command.commands.Command;
+import org.example.behavioural.command.commands.TurnOffCommand;
+import org.example.behavioural.command.commands.TurnOnCommand;
+import org.example.behavioural.command.devices.Ac;
+import org.example.behavioural.command.devices.Tv;
 
 
 public class Main {

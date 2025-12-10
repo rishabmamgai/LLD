@@ -1,7 +1,7 @@
-package org.example.command.commands;
+package org.example.behavioural.command.commands;
 
 import lombok.AllArgsConstructor;
-import org.example.command.devices.Device;
+import org.example.behavioural.command.devices.Device;
 
 
 @AllArgsConstructor

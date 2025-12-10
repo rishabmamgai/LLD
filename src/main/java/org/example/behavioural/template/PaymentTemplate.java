@@ -1,4 +1,4 @@
-package org.example.template;
+package org.example.behavioural.template;
 
 
 public abstract class PaymentTemplate {
