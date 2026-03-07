@@ -1,7 +1,7 @@
-package org.example.visitor.visitors;
+package org.example.behavioural.visitor.visitors;
 
-import org.example.visitor.shapes.Circle;
-import org.example.visitor.shapes.Square;
+import org.example.behavioural.visitor.shapes.Circle;
+import org.example.behavioural.visitor.shapes.Square;
 
 
 public class AreaVisitor implements Visitor {

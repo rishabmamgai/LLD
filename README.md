@@ -55,6 +55,22 @@
 ![Iterator UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Iterator.jpg?raw=true)
 
 
+## Mediator
+***Reduces direct communication between objects by centralizing it through a mediator.***
+1. Reduces dependencies between objects hence making objects loosely coupled.
+
+![Mediator UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Mediator.jpg?raw=true)
+
+
+## Memento
+***Allows objects state to be saved and restored without exposing its internal details.***
+* Originator - **Document**
+* Caretaker - **PageHistory**
+* Memento - **DocumentSnapshot**
+
+![Memento UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Memento.jpg?raw=true)
+
+
 ## Observer
 ***Defines a one-to-many dependency between objects and notifies the dependents (Observers) about any state change.***
 
@@ -77,28 +93,12 @@
 ![Template UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Template.jpg?raw=true)
 
 
-## Mediator
-***Reduces direct communication between objects by centralizing it through a mediator.***
-1. Reduces dependencies between objects hence making objects loosely coupled.
-
-![Mediator UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Mediator.jpg?raw=true)
-
-
 ## Visitor
 ***Separates operations from the objects on which it operates.***
 1. Allows adding new operations to existing classes without changing their structure.
 2. Improves modularity and maintainability.
 
 ![Visitor UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Visitor.jpg?raw=true)
-
-
-## Memento
-***Allows objects state to be saved and restored without exposing its internal details.***
-* Originator - **Document**
-* Caretaker - **PageHistory**
-* Memento - **DocumentSnapshot**
-
-![Memento UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Memento.jpg?raw=true)
 
 
 # Structural Design Patterns

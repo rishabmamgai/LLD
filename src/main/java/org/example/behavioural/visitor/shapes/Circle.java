@@ -1,8 +1,8 @@
-package org.example.visitor.shapes;
+package org.example.behavioural.visitor.shapes;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import org.example.visitor.visitors.Visitor;
+import org.example.behavioural.visitor.visitors.Visitor;
 
 
 @Getter

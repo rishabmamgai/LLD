@@ -1,8 +1,8 @@
-package org.example.mediator;
+package org.example.behavioural.mediator;
 
-import org.example.mediator.planes.CargoPlane;
-import org.example.mediator.planes.CommercialPlane;
-import org.example.mediator.planes.Plane;
+import org.example.behavioural.mediator.planes.CargoPlane;
+import org.example.behavioural.mediator.planes.CommercialPlane;
+import org.example.behavioural.mediator.planes.Plane;
 
 
 public class Main {

@@ -1,8 +1,8 @@
-package org.example.mediator.planes;
+package org.example.behavioural.mediator.planes;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import org.example.mediator.Mediator;
+import org.example.behavioural.mediator.Mediator;
 
 
 @Getter

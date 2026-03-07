@@ -1,6 +1,6 @@
-package org.example.mediator;
+package org.example.behavioural.mediator;
 
-import org.example.mediator.planes.Plane;
+import org.example.behavioural.mediator.planes.Plane;
 
 
 public interface Mediator {

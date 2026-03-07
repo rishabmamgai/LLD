@@ -1,10 +1,10 @@
-package org.example.mediator.planes;
+package org.example.behavioural.mediator.planes;
 
-import org.example.mediator.Mediator;
+import org.example.behavioural.mediator.Mediator;
 
 
-public class CommercialPlane extends Plane {
-    public CommercialPlane(String name, Mediator mediator) {
+public class CargoPlane extends Plane {
+    public CargoPlane(String name, Mediator mediator) {
         super(mediator, name);
     }
 

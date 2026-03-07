@@ -1,9 +1,9 @@
-package org.example.visitor;
+package org.example.behavioural.visitor;
 
-import org.example.visitor.shapes.Circle;
-import org.example.visitor.shapes.Square;
-import org.example.visitor.visitors.AreaVisitor;
-import org.example.visitor.visitors.PerimeterVisitor;
+import org.example.behavioural.visitor.shapes.Circle;
+import org.example.behavioural.visitor.shapes.Square;
+import org.example.behavioural.visitor.visitors.AreaVisitor;
+import org.example.behavioural.visitor.visitors.PerimeterVisitor;
 
 
 public class Main {

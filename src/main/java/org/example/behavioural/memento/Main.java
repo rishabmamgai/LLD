@@ -1,4 +1,4 @@
-package org.example.memento;
+package org.example.behavioural.memento;
 
 
 public class Main {
