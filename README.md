@@ -110,10 +110,13 @@
 ![Adapter UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Adapter.jpg?raw=true)
 
 
-## Decorator
-***Allows to add functionality to an object dynamically without changing behaviour of other objects.***
+## Bridge
+***Decouples an abstraction from its implementation so that both can vary independently.***
 
-![Decorator UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Decorator.jpg?raw=true)
+1. Prevents hierarchy from growing exponentially when new types are added. [Refer for problem](https://refactoring.guru/design-patterns/bridge#:~:text=of%20each%C2%A0other.-,Problem,-Abstraction%3F%20Implementation)
+2. Switches inheritance to composition.
+
+![Bridge UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Bridge.jpg?raw=true)
 
 
 ## Composite
@@ -125,10 +128,10 @@
 ![Composite UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Composite.jpg?raw=true)
 
 
-## Proxy
-***Provides controlled access to a functionality.***
+## Decorator
+***Allows to add functionality to an object dynamically without changing behaviour of other objects.***
 
-![Proxy UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Proxy.jpg?raw=true)
+![Decorator UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Decorator.jpg?raw=true)
 
 
 ## Facade
@@ -137,10 +140,15 @@
 ![Facade UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Facade.jpg?raw=true)
 
 
-## Bridge
-***Decouples an abstraction from its implementation so that both can vary independently.***
+## Flyweight
+***Minimizes memory usage by sharing common data (Intrinsic state) across many objects.***
 
-1. Prevents hierarchy from growing exponentially when new types are added. [Refer for problem](https://refactoring.guru/design-patterns/bridge#:~:text=of%20each%C2%A0other.-,Problem,-Abstraction%3F%20Implementation)
-2. Switches inheritance to composition.
+1. Use when a large number of objects needs to be created.
 
-![Bridge UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Bridge.jpg?raw=true)
+![Flyweight UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Flyweight.jpg?raw=true)
+
+
+## Proxy
+***Provides controlled access to a functionality.***
+
+![Proxy UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Proxy.jpg?raw=true)
