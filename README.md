@@ -1,15 +1,6 @@
 # Creational Design Patterns
 
 
-## Factory
-***Defines an interface for creating an object, but let subclasses decide which class to instantiate.***
-
-1. The main idea is to defer the logic of instantiation to subclasses.
-2. This helps in hiding the logic behind creation of object from the client.
-
-![Factory UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Factory.jpg?raw=true)
-
-
 ## Abstract Factory
 ***Helps in creating families of related objects without specifying the concrete classes.***
 
@@ -23,6 +14,33 @@
 2. Reduces need for multiple constructors based on number of fields.
 
 ![Builder UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Builder.jpg?raw=true)
+
+
+## Factory
+***Defines an interface for creating an object, but let subclasses decide which class to instantiate.***
+
+1. The main idea is to defer the logic of instantiation to subclasses.
+2. This helps in hiding the logic behind creation of object from the client.
+
+[Simple Factory vs Factory Method Pattern](https://refactoring.guru/design-patterns/factory-comparison#:~:text=4.%20Simple%20factory%20pattern,Accountant(%24id)%3B%0A%20%20%20%20%7D%0A%7D)
+
+![Factory UML](https://github.com/rishabmamgai/LLD/blob/master/umls/Factory.jpg?raw=true)
+
+
+## Prototype
+***Helps to make a copy from existing object.***
+
+
+## Singleton
+***Creates only one instance of a class.***
+
+| Type                   |       Creation        |                                   Issue |
+|:-----------------------|:---------------------:|----------------------------------------:|
+| Eager                  |     Class Loading     | No flexibility for initialisation logic |
+| Lazy                   | Runtime, first access |                         Not Thread-Safe |
+| Synchronised Method    | Runtime, first access |                        Locking overhead |
+| Double Locking         | Runtime, first access |       CPU caching during initialisation |
+| Double-Checked Locking | Runtime, first access |                                    None |
 
 
 # Behavioural Design Patterns
